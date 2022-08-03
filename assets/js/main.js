@@ -311,7 +311,11 @@
             var template = '';
             for (var info in exif) {
                 if (info === "model") {
-                    template += '<i class="fa fa-camera-retro" aria-hidden="true"></i> ' + exif["model"] + '&nbsp;&nbsp;';
+                    if (exif["model"] === "ILCE-9") { 
+                        template += '<i class="fa fa-camera-retro" aria-hidden="true"></i> ' + 'Sony α9' + '&nbsp;&nbsp;';
+                    } else {
+                        template += '<i class="fa fa-camera-retro" aria-hidden="true"></i> ' + exif["model"] + '&nbsp;&nbsp;';
+                    }
                 }
                 if (info === "aperture") {
                     template += '<i class="fa fa-dot-circle-o" aria-hidden="true"></i> f/' + exif["aperture"] + '&nbsp;&nbsp;';
