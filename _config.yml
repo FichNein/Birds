@@ -1,0 +1,14 @@
+# Base configs
+baseurl: "https://fichnein.github.io/birds"
+image_fulls_loc: "/images/fulls"
+image_thumbs_loc: "/images/thumbs"
+
+# UI configs
+title: "Birds of Washington"
+subtitle: "Look at these birds"
+author: "Nich Feingold"
+header:
+ title: "Birds"
+ subtitle: "by Nich Feingold"
+
+web_design: "AJ"
